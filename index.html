@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Layout de Sitio Web </title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/estilos.css" />
+	<link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+
+	<div class="contenedor">
+
+		<header class="header">
+			<div class="logo">
+				<p class="iniciales-logo">CM</p>
+				<h1>Market Place</h1>
+			</div>
+			<nav class="menu">
+				<a href="#">Inicio</a>
+				<a href="#">Acerca de</a>
+				<a href="#">Artículos</a>
+				<a href="#">Contacto</a>
+			</nav>
+		</header>
+
+		<article class="articulo destacado">
+			<div class="contenedor-texto">
+				<div>
+					<h2 class="titulo">Diseños destacados</h2>
+					<p class="fecha">
+						<time>Septiembre</time>
+					</p>
+				</div>
+				<p class="extracto">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt illo possimus atque fuga harum consequuntur
+					reprehenderit, asperiores aperiam commodi, repellat deserunt odio repellendus iste recusandae vitae officiis
+					rem eaque esse!
+				</p>
+				<button id="btn-abrir-modal" class="btn-link shopButton">Nueva Prenda</button>
+			</div>
+			<div class="contenedor-thumbnail">
+				<a href="#">
+					<img src="./img/img-01.png" alt="" />
+				</a>
+			</div>
+		</article>
+		<dialog id="modal" class="dialog">
+			<div class="contact-form">
+				<h1 class="titulo">Prenda</h1>
+
+				<form method="dialog" id="miForm" autocomplete="off">
+					<p>
+						<label for="idname">Nombre</label>
+						<input id="idname" type="text" name="nombre">
+					</p>
+
+					<p >
+							<label for="idcateg">Categoria</label>
+							<input id="idcateg" type="text" name="categoria" >
+						</p>
+
+					<p>
+						<label for="idprecio">precio</label>
+						<input id="idprecio" type="number" name="precio">
+					</p>
+					<p>
+						<label for="idValor">Valor Total</label>
+						<input id="valorT" type="number" name="valorT">
+					</p>
+					<p>
+						<label for="idstock">Stock</label>
+						<input id="idstock" type="number" name="stock">
+
+
+					<p class="block">
+						<button class="shopButton" id="btn-cerrar-modal">
+							Enviar
+						</button>
+					</p>
+				</form>
+				<hr>
+			</div>
+		</dialog>
+
+		<main class="contenido">
+			<article class="articulo">
+				<div class="contenedor-texto" >
+					<div class="contenedor-texto">
+						<div>
+							<h2 class="titulo">
+								<a href="#">Listado de Ropa por categoria</a>
+							</h2>
+						</div>
+					<div id="listaElementos">
+					</div>
+				</div>
+			</article>
+		</main>
+
+		<aside class="sidebar">
+			<div class="acerca-de">
+				<img src="./img/foto.jpg" class="img-perfil" alt="" />
+
+				<div class="bio">
+					<p class="titulo">¡Hola!</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Impedit quae tenetur veritatis esse aperiam?
+					</p>
+				</div>
+			</div>
+			<nav class="menu">
+				<a href="#">Acerca de</a>
+				<a href="#">Portafolio</a>
+				<a href="#">Contacto</a>
+			</nav>
+		</aside>
+
+		<footer class="footer">
+			<article class="articulo destacado">
+				<div class="contenedor-thumbnail-img">
+					<a href="#">
+						<img style="height: 10em; margin-top: 1.5rem;" src="./img/footer.png" alt="" />
+					</a>
+				</div>
+				<div class="contenedor-texto-footer">
+					<div>
+						<h2 class="titulo">Contactanos</h2>
+
+					</div>
+					<p class="extracto">Calle 20 # 20-20</p>
+					<p class="extracto">Cel: 5254486555</p>
+					<p class="extracto">marketplace@place.com</p>
+					<!-- <a href="#" class="btn-link">Leer más</a> -->
+				</div>
+			</article>
+		</footer>
+	</div>
+
+	<script src="./index.js"></script>
+</body>
+
+</html>
