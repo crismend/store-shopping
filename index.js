@@ -45,7 +45,7 @@ document.getElementById("miForm").addEventListener("submit", function (event) {
       console.log(data);
 
       document.getElementById("miForm").reset();
-
+      location.reload();
     })
     .catch(error => {
       console.error('Error:', error);
